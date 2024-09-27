@@ -1,0 +1,86 @@
+body {
+    background-color: #6A9C89;
+}
+
+nav {
+    display: flex;
+}
+
+nav > div{
+    width: 25%;
+    height: 3rem;
+    background-color: #16423C;
+    border: 2px solid black;
+    color: #C4DAD2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+nav > div:hover{
+    font-weight: bold;
+    color: rgb(39, 165, 66);
+    flex: 35%;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.projects {
+    text-align: center;
+    flex-direction: column;
+
+    background: crimson;
+    height: 7.5em;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* For mobile devices*/
+@media screen and (max-width: 500px){
+    
+    /* Adjusts navigation bar */
+    nav {
+        flex-direction: column;
+    }
+    nav > div{
+        width: 100%;
+        height: 25%;
+    }
+
+    /* Project boxes */
+
+    .projects {
+        width: 100%;
+        background: #CCDDD3;
+    }
+
+}
+
+/* For tablet devices */
+@media screen and (min-width: 501px) and (max-width: 800px){
+    
+    /* Adjusts navigation bar */
+    nav > div{
+        width: 100%;
+    }
+
+    /* Project boxes */
+
+    .projects {
+        width: 100%;
+        background: #AFC2D5;
+    }
+
+}
+
+/* For the superior desktop/laptop users, unnecessary since the default is fit
+@media screen and (min-width: 800px){
+    .project {
+        color: #FFF9A5;
+    }
+}
+
+/*
