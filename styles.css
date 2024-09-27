@@ -55,6 +55,13 @@ nav > div:hover{
     .projects {
         width: 100%;
         background: #CCDDD3;
+        /* Testing responsive text-sizes
+        font-size: 2vw;
+        */
+    }
+
+    body {
+        background: #176B87;
     }
 
 }
@@ -72,11 +79,17 @@ nav > div:hover{
     .projects {
         width: 100%;
         background: #AFC2D5;
-    }
+        /* Testing responsive text-sizes
+        font-size: 2vw;
+        */
+    }  
 
+    body {
+        background-color: #86B6F6;
+    }
 }
 
-/* For the superior desktop/laptop users, unnecessary since the default is fit
+/* For the superior desktop/laptop users, unnecessary since the default styles are already defined above
 @media screen and (min-width: 800px){
     .project {
         color: #FFF9A5;
